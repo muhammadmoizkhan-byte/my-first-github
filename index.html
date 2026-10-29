@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Skyline Academy - Workshop Registration</title>
+
+<!-- 1) EXTERNAL CSS : link to styles.css -->
+<link rel="stylesheet" href="styles.css">
+
+<!-- 2) INTERNAL CSS : written inside <style> in this page only -->
+<style>
+  #intro-box {
+    background-color: white;
+    border-left: 8px solid #ff8a3d;
+    padding: 15px 20px;
+    margin-bottom: 25px;
+  }
+  #courses-title {
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<!-- Navigation -->
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="form.html">Register</a>
+  <a href="thanks.html">Thank You</a>
+</div>
+
+<!-- Banner with badge -->
+<div id="banner">
+  <span class="badge">Seats Filling Fast!</span>
+  <h1>Skyline Academy</h1>
+  <p>Learn. Build. Grow.</p>
+</div>
+
+<!-- Circular profile picture -->
+<img class="profile-pic" src="profile.jpg" alt="Student picture">
+
+<div class="container">
+
+  <div id="intro-box">
+    <h2>Welcome, Future Student!</h2>
+    <p>Skyline Academy offers short practical workshops. Choose a workshop below and then fill in the registration form to reserve your seat.</p>
+  </div>
+
+  <h2 id="courses-title">Available Workshops</h2>
+
+  <!-- Cards -->
+  <div class="card-grid">
+    <div class="card">
+      <h3>Web Design</h3>
+      <p>Build websites using HTML and CSS.</p>
+      <p><b>4 weeks | 40 seats</b></p>
+    </div>
+    <div class="card">
+      <h3>Python and AI</h3>
+      <p>Learn Python and make a small AI project.</p>
+      <p><b>6 weeks | 30 seats</b></p>
+    </div>
+    <div class="card">
+      <h3>Game Development</h3>
+      <p>Create a simple 2D game.</p>
+      <p><b>5 weeks | 25 seats</b></p>
+    </div>
+  </div>
+
+  <!-- 3) INLINE CSS : written directly inside the tag using style="" -->
+  <p class="center" style="margin-top: 35px; font-size: 20px;">
+    <a class="btn" href="form.html">Register Now</a>
+  </p>
+
+</div>
+
+<footer>&copy; 2026 Skyline Academy</footer>
+
+</body>
+</html>

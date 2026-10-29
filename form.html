@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Registration Form - Skyline Academy</title>
+
+<!-- 1) EXTERNAL CSS -->
+<link rel="stylesheet" href="styles.css">
+
+<!-- 2) INTERNAL CSS (this page only) -->
+<style>
+  #form-title {
+    text-align: center;
+    font-size: 32px;
+  }
+  .form-box {
+    position: relative;      /* so the badge can be placed inside the box */
+  }
+  .form-box .badge {
+    top: -15px;              /* moves badge up over the border */
+    right: 20px;
+  }
+</style>
+</head>
+<body>
+
+<!-- Navigation -->
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="form.html">Register</a>
+  <a href="thanks.html">Thank You</a>
+</div>
+
+<h2 id="form-title">Workshop Registration Form</h2>
+
+<!-- 3) INLINE CSS -->
+<p class="center" style="color: red;">Fields marked * are required.</p>
+
+<div class="form-box">
+  <span class="badge">Free Entry</span>
+
+  <form action="thanks.html" method="get">
+
+    <div class="form-group">
+      <label for="fullname">Full Name: *</label>
+      <input type="text" id="fullname" name="fullname" required>
+    </div>
+
+    <div class="form-group">
+      <label for="regno">Registration No: *</label>
+      <input type="text" id="regno" name="regno" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email: *</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+
+    <div class="form-group">
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" placeholder="03XXXXXXXXX">
+    </div>
+
+    <div class="form-group">
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" min="16" max="40">
+    </div>
+
+    <div class="form-group">
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob">
+    </div>
+
+    <div class="form-group">
+      <label>Gender:</label>
+      <input type="radio" id="male" name="gender" value="Male">
+      <label class="small-label" for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="Female">
+      <label class="small-label" for="female">Female</label>
+    </div>
+
+    <div class="form-group">
+      <label for="workshop">Workshop:</label>
+      <select id="workshop" name="workshop">
+        <option>Web Design</option>
+        <option>Python and AI</option>
+        <option>Game Development</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>Interests:</label>
+      <input type="checkbox" id="web" name="interests" value="Web">
+      <label class="small-label" for="web">Web</label>
+      <input type="checkbox" id="ai" name="interests" value="AI">
+      <label class="small-label" for="ai">AI</label>
+      <input type="checkbox" id="games" name="interests" value="Games">
+      <label class="small-label" for="games">Games</label>
+    </div>
+
+    <div class="form-group">
+      <label for="address">Address:</label>
+      <textarea id="address" name="address" rows="4"></textarea>
+    </div>
+
+    <div class="center">
+      <input class="btn" type="submit" value="Register">
+      <input class="btn" type="reset" value="Clear">
+    </div>
+
+  </form>
+</div>
+
+<footer>&copy; 2026 Skyline Academy</footer>
+
+</body>
+</html>
